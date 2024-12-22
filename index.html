@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <head>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap"
+        rel="stylesheet"
+      />
+    </head>
+
+    <title>Frontend Mentor | Order summary card</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <picture>
+        <!-- Image for desktop -->
+        <source
+          srcset="images/pattern-background-desktop.svg"
+          media="(min-width: 1024px)"
+        />
+        <!-- Fallback or phone image -->
+        <img src="images/pattern-background-mobile.svg" alt="bg image" />
+      </picture>
+      <section class="card">
+        <div class="hero-container">
+          <img
+            src="images/illustration-hero.svg"
+            alt="hero illustration"
+            class="hero-img"
+          />
+        </div>
+        <div class="card-content">
+          <div class="card-contnet-summary">
+            <h1>Order Summary</h1>
+            <p>
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+          </div>
+          <div class="card-contnet-price">
+            <img src="images/icon-music.svg" alt="musci icon" class="music-icon" />
+            <div class="card-contnet-annual-price">
+              <h2>Annual Plan</h2>
+              <span>$59.99/year</span>
+            </div>
+            <a href="#" class="change-link">Change</a>
+          </div>
+          <button class="card-content-proceed-btn">Proceed to Payment</button>
+          <button class="card-content-proceed-cancel-btn">Cancel Order</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>

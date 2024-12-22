@@ -1,0 +1,252 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #e0e8ff;
+  width: 375px;
+  height: 709px;
+  position: relative;
+}
+
+.card {
+  width: 327px;
+  height: 567px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+  position: absolute;
+  top: 71px;
+}
+
+.hero-container {
+  width: 327px;
+  height: 160px;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card-content {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-contnet-summary {
+  padding: 0px 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h1 {
+  color: #1f2e55;
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+p {
+  color: #717fa6;
+  text-align: center;
+  font-family: "Red Hat Display";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+
+.music-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;   
+}
+.card-contnet-price {
+  width: 279px;
+  height: 81px;
+  flex-shrink: 0;
+  padding: 16px;
+  display: flex;
+  border-radius: 11px;
+  background: #f7f9ff;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+h2 {
+  color: #1f2e55;
+  font-family: "Red Hat Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+span {
+  color: #717fa6;
+  font-family: "Red Hat Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.change-link {
+  color: #382ae1;
+  font-family: "Red Hat Display";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  flex-grow: 2;
+  text-align: right;
+  cursor: pointer;
+}
+.change-link:hover {
+  color: #766cf1;
+  font-family: "Red Hat Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: none;
+}
+.card-contnet-annual-price {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.card-content-proceed-btn {
+  border-radius: 11px;
+  background: #382ae1;
+  outline: none;
+  border: none;
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+
+  width: 279px;
+  height: 50px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: "Red Hat Display";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card-content-proceed-btn:hover {
+  border-radius: 11px;
+  background: #766cf1;
+  box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+}
+
+.card-content-proceed-cancel-btn {
+  color: #717fa6;
+  font-family: "Red Hat Display";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  background-color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.card-content-proceed-cancel-btn:hover {
+  color: #1f2e55;
+  font-family: "Red Hat Display";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+@media (min-width: 1025px) {
+  main {
+    width: 1440px;
+    height: 900px;
+  }
+  .card {
+    top: 102px;
+    width: 450px;
+    height: 697px;
+    border-radius: 20px;
+  }
+  .hero-container {
+    width: 450px;
+    height: 220px;
+    flex-shrink: 0;
+    border-radius: 20px;
+  }
+  .card-content {
+    padding: 48px;
+    gap: 32px;
+  }
+
+  h1 {
+    color: #1f2e55;
+    text-align: center;
+    font-family: "Red Hat Display";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  p {
+    color: #717fa6;
+    text-align: center;
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    width: 354px;
+  }
+  .card-contnet-price {
+    width: 354px;
+    height: 98px;
+    padding: 24px;
+  }
+  .card-content-proceed-btn {
+    width: 354px;
+    height: 50px;
+    flex-shrink: 0;
+  }
+}
